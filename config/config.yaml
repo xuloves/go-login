@@ -1,0 +1,23 @@
+app:
+  name: cloud-restaurant
+  host: 127.0.0.1
+  port: 8080
+#oss短信服务
+oss:
+  accessKeyID: #key id
+  accessKeySecret: #key secret
+  regionId: cn-hangzhou
+  templateCode: #模板code
+  signName:   #签名名称
+#mysql数据库
+mysql:
+  path: 127.0.0.1:3306
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  database: go
+  username: root
+  password: 123456
+#redis数据库
+redis:
+  addr: 127.0.0.1:6379
+  password:   # no password set
+  DB: 0   # use default DB
