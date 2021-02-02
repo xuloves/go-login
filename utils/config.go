@@ -7,7 +7,7 @@ import (
 
 type Config struct {
 	App   `yaml:"app"`
-	Oss   `yaml:"oss"`
+	Sms   `yaml:"sms"`
 	Mysql `yaml:"mysql"`
 	Redis `yaml:"redis"`
 }
@@ -17,7 +17,7 @@ type App struct {
 	Host string `yaml:"host"`
 	Port string `yaml:"port"`
 }
-type Oss struct {
+type Sms struct {
 	AccessKeyID     string `yaml:"accessKeyID"`
 	AccessKeySecret string `yaml:"accessKeySecret"`
 	RegionId        string `yaml:"regionId"`

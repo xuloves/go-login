@@ -5,11 +5,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func InitSmsRouter(Router *gin.RouterGroup) {
-	smsRouter := Router.Group("api")
+func InitMemberRouter(Router *gin.RouterGroup) {
+	memberRouter := Router.Group("api")
 	{
-		smsRouter.GET("sendMsg", api.SendMessage)
-		smsRouter.OPTIONS("msgLogin", api.MsgLogin)
-		smsRouter.POST("login", api.Login)
+		memberRouter.GET("sendMsg", api.SendMessage)
+		memberRouter.OPTIONS("msgLogin", api.MsgLogin)
+		memberRouter.POST("login", api.Login)
 	}
 }

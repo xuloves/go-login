@@ -11,7 +11,7 @@ func Routers() *gin.Engine {
 
 	group := Router.Group("")
 	{
-		router.InitSmsRouter(group)
+		router.InitMemberRouter(group)
 	}
 	return Router
 }

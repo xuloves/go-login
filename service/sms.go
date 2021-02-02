@@ -23,7 +23,7 @@ func SendMsg(phone string) int {
 	if err == redis.Nil {
 		//redis未存验证码
 		//2.调用阿里云sdk 完成发送
-		config := utils.GetConfig().Oss
+		config := utils.GetConfig().Sms
 		client, err := dysmsapi.NewClientWithAccessKey(config.RegionId, config.AccessKeyID, config.AccessKeySecret)
 		if err != nil {
 			return 0

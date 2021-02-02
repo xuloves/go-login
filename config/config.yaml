@@ -2,8 +2,8 @@ app:
   name: cloud-restaurant
   host: 127.0.0.1
   port: 8080
-#oss短信服务
-oss:
+#阿里云短信服务
+sms:
   accessKeyID: #key id
   accessKeySecret: #key secret
   regionId: cn-hangzhou
